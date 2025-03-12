@@ -32,7 +32,9 @@ const SectionCard: React.FC<SectionCardProps> = ({
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold text-reno-800 mb-2">{title}</h3>
+        <Link to={link} className="hover:text-reno-accent transition-colors">
+          <h3 className="text-xl font-bold text-reno-800 mb-2">{title}</h3>
+        </Link>
         <p className="text-reno-600 mb-4">{description}</p>
         <Link to={link}>
           <Button className="w-full bg-reno-accent hover:bg-reno-accent/90">

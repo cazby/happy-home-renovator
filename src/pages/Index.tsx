@@ -1,11 +1,20 @@
-
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PageLayout from '@/components/PageLayout';
 import SectionCard from '@/components/SectionCard';
 import { Button } from '@/components/ui/button';
 import { Building, ArrowRight } from 'lucide-react';
+import { 
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext
+} from '@/components/ui/carousel';
 
 const Index = () => {
+  const [api, setApi] = useState<any>(null);
+  const [current, setCurrent] = useState(0);
+
   const sections = [
     {
       title: "Home Additions",
@@ -39,27 +48,85 @@ const Index = () => {
     }
   ];
 
+  useEffect(() => {
+    if (!api) return;
+    
+    const intervalId = setInterval(() => {
+      api.scrollNext();
+    }, 4000);
+    
+    return () => clearInterval(intervalId);
+  }, [api]);
+  
+  useEffect(() => {
+    if (!api) return;
+    
+    const onSelect = () => {
+      setCurrent(api.selectedScrollSnap());
+    };
+    
+    api.on('select', onSelect);
+    
+    return () => {
+      api.off('select', onSelect);
+    };
+  }, [api]);
+
   return (
     <PageLayout>
-      {/* Hero Section */}
-      <section className="hero-section text-white py-20 md:py-32">
-        <div className="container mx-auto text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Transform Your Home, Elevate Your Life</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Professional home renovations tailored to your needs, style, and budget.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white text-lg px-8 py-6">
-              Get a Free Quote
-            </Button>
-            <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 text-lg px-8 py-6">
-              View Our Projects
-            </Button>
+      <section className="relative text-white">
+        <Carousel 
+          setApi={setApi}
+          className="w-full"
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+        >
+          <CarouselContent>
+            {sections.map((section, index) => (
+              <CarouselItem key={index} className="w-full">
+                <div className="hero-slide relative w-full h-[500px] md:h-[600px]" style={{ 
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${section.imageSrc})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center px-4">
+                      <h1 className="text-4xl md:text-6xl font-bold mb-6">Transform Your Home, Elevate Your Life</h1>
+                      <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                        Professional home renovations tailored to your needs, style, and budget.
+                      </p>
+                      <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white text-lg px-8 py-6">
+                          Get a Free Quote
+                        </Button>
+                        <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 text-lg px-8 py-6">
+                          View Our Projects
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10">
+            {sections.map((_, index) => (
+              <button
+                key={index}
+                className={`w-3 h-3 rounded-full transition-all ${
+                  index === current ? "bg-white scale-110" : "bg-white/50"
+                }`}
+                onClick={() => api?.scrollTo(index)}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
           </div>
-        </div>
+        </Carousel>
       </section>
 
-      {/* Services Introduction */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -87,7 +154,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -131,7 +197,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
       <section className="py-16 bg-reno-accent text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Home?</h2>

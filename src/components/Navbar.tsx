@@ -60,7 +60,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 top-16 bg-white z-40 md:hidden transition-transform duration-300 ease-in-out",
+          "fixed inset-0 top-16 bg-reno-accent z-40 md:hidden transition-transform duration-300 ease-in-out",
           isMenuOpen ? "transform translate-x-0" : "transform translate-x-full"
         )}
       >
@@ -69,13 +69,13 @@ const Navbar = () => {
             <Link
               key={route.path}
               to={route.path}
-              className="text-lg font-medium text-reno-700 hover:text-reno-accent py-2"
+              className="text-lg font-medium text-white hover:text-white/80 py-2"
               onClick={() => setIsMenuOpen(false)}
             >
               {route.name}
             </Link>
           ))}
-          <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white w-full mt-4">
+          <Button className="bg-white hover:bg-white/90 text-reno-accent w-full mt-4">
             Get Quote
           </Button>
         </nav>

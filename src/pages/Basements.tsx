@@ -1,4 +1,3 @@
-
 import React from 'react';
 import PageLayout from '@/components/PageLayout';
 import { Button } from '@/components/ui/button';
@@ -19,7 +18,7 @@ const Basements = () => {
           <div className="mb-12">
             <div className="aspect-video w-full overflow-hidden rounded-lg mb-8">
               <img 
-                src="/lovable-uploads/3f452b6c-3a04-4986-98cb-fdc8e41e407c.png" 
+                src="/lovable-uploads/bec75484-8f80-404b-b3f1-4ac2bacac697.png" 
                 alt="Basement Finishing" 
                 className="w-full h-full object-cover"
               />

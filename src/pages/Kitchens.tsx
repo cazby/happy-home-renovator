@@ -1,8 +1,8 @@
-
 import React from 'react';
 import PageLayout from '@/components/PageLayout';
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 const Kitchens = () => {
   const benefits = [
@@ -35,34 +35,44 @@ const Kitchens = () => {
 
   return (
     <PageLayout>
+      <Helmet>
+        <title>Kitchen Remodeling Atlanta, GA | 7-Day Kitchen Renovations</title>
+        <meta name="description" content="Premium kitchen remodeling in Atlanta, GA. Transform your kitchen in just 7 days with our expert team. Custom cabinets, countertops, and modern designs." />
+        <meta name="keywords" content="kitchen remodeling Atlanta, kitchen renovation Atlanta GA, custom kitchen design, 7 day kitchen remodel" />
+        <meta property="og:title" content="Atlanta's Premier Kitchen Remodeling | 7-Day Projects" />
+        <meta property="og:description" content="Transform your Atlanta kitchen in just 7 days. Premium materials, expert craftsmanship, and beautiful designs." />
+        <link rel="canonical" href="https://yourdomain.com/kitchens" />
+      </Helmet>
+      
       {/* Hero Section */}
       <div className="relative">
         <img 
           src="/lovable-uploads/b256c961-b6d2-457c-8389-a479c5ae5d5c.png" 
-          alt="Kitchen Renovation" 
+          alt="Kitchen Renovation Atlanta" 
           className="w-full h-[50vh] object-cover"
         />
         <div className="absolute inset-0 bg-black/40 flex items-center">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Kitchen Renovations</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Atlanta Kitchen Renovations in 7 Days</h1>
             <p className="text-xl text-white max-w-2xl">
-              Transform the heart of your home into a beautiful, functional space where cooking becomes a pleasure.
+              Transform the heart of your Atlanta home into a beautiful, functional kitchen in just one week.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Main Content */}
+      {/* Main Content - modify first paragraph */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Left Column - Content */}
             <div>
-              <h2 className="text-3xl font-bold text-reno-800 mb-6">The Heart of Your Home, Reimagined</h2>
+              <h2 className="text-3xl font-bold text-reno-800 mb-6">The Heart of Your Atlanta Home, Reimagined in 7 Days</h2>
               
               <p className="text-reno-600 mb-6 text-lg">
-                The kitchen is more than just a place to prepare meals—it's where family gathers, conversations flow, and memories are made. 
-                Our expert kitchen renovations combine beautiful design with practical functionality to create a space that works for your lifestyle.
+                The kitchen is more than just a place to prepare meals—it's where Atlanta families gather, conversations flow, and memories are made. 
+                Our expert kitchen renovations combine beautiful design with practical functionality to create a space that works for your lifestyle, 
+                all completed in just 7 days.
               </p>
               
               <p className="text-reno-600 mb-8 text-lg">
@@ -207,12 +217,12 @@ const Kitchens = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Updated CTA Section */}
       <section className="py-16 bg-reno-800 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Create Your Dream Kitchen?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready for Your Atlanta Kitchen Transformation in Just 7 Days?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact us today to schedule a free design consultation and get a detailed estimate for your kitchen renovation.
+            Contact us today to schedule a free design consultation and get a detailed estimate for your kitchen renovation in Atlanta or surrounding areas.
           </p>
           <Button className="bg-reno-accent-alt hover:bg-reno-accent-alt/90 text-white text-lg px-8 py-6">
             Schedule Your Design Consultation

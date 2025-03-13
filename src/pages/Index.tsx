@@ -14,7 +14,7 @@ const Index = () => {
       <Helmet>
         <title>Premier Kitchen, Bathroom & Home Remodeling in Atlanta, GA | 7-Day Renovations</title>
         <meta name="description" content="Atlanta's trusted home renovation experts. Complete kitchen remodels, bathroom renovations, and home additions in just 7 days. Serving Atlanta and surrounding areas." />
-        <meta name="keywords" content="kitchen remodeling Atlanta, bathroom renovation Atlanta, home additions Atlanta, 7 day renovation, quick remodeling Atlanta GA" />
+        <meta name="keywords" content="kitchen remodeling Atlanta, bathroom renovation Atlanta, home additions Atlanta, 7 day renovation, quick remodeling Atlanta GA, Itel Professional Services" />
         <meta property="og:title" content="Atlanta's #1 Kitchen & Bathroom Remodeling | 7-Day Projects" />
         <meta property="og:description" content="Transform your Atlanta home in just 7 days. Premium kitchen remodels, bathroom renovations and home additions with our expert team." />
         <meta property="og:locale" content="en_US" />

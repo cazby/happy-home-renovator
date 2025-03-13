@@ -11,6 +11,9 @@ const CTASection: React.FC = () => {
         <p className="text-xl mb-8 max-w-2xl mx-auto">
           Our Atlanta team completes most renovation projects in just one week. Contact us today for a free consultation and estimate on your Atlanta home renovation project.
         </p>
+        <p className="text-lg mb-8 max-w-2xl mx-auto">
+          Itel is the insurance leader for cost and have partner with us. Click below and learn more.
+        </p>
         <Button className="bg-white text-reno-accent hover:bg-gray-100 text-lg px-8 py-6 inline-flex items-center gap-2">
           Get Started Today <ArrowRight className="ml-2" />
         </Button>

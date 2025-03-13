@@ -25,8 +25,8 @@ export const homeSections = [
     link: "/floors"
   },
   {
-    title: "Basement Finishing",
-    description: "Convert your unused basement into valuable living space, from entertainment rooms to guest suites.",
+    title: "Itel Professional Services Contractor",
+    description: "Itel is the insurance leader for cost and have partner with us. Click below and learn more.",
     imageSrc: "/lovable-uploads/3f452b6c-3a04-4986-98cb-fdc8e41e407c.png",
     link: "/basements"
   }

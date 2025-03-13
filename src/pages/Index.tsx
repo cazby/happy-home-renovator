@@ -12,11 +12,11 @@ const Index = () => {
   return (
     <PageLayout>
       <Helmet>
-        <title>Premier Kitchen, Bathroom & Home Remodeling in Atlanta, GA | 7-Day Renovations</title>
-        <meta name="description" content="Atlanta's trusted home renovation experts. Complete kitchen remodels, bathroom renovations, and home additions in just 7 days. Serving Atlanta and surrounding areas." />
-        <meta name="keywords" content="kitchen remodeling Atlanta, bathroom renovation Atlanta, home additions Atlanta, 7 day renovation, quick remodeling Atlanta GA, Itel Professional Services" />
-        <meta property="og:title" content="Atlanta's #1 Kitchen & Bathroom Remodeling | 7-Day Projects" />
-        <meta property="og:description" content="Transform your Atlanta home in just 7 days. Premium kitchen remodels, bathroom renovations and home additions with our expert team." />
+        <title>Premier Kitchen, Bathroom & Home Remodeling in Atlanta, GA | 1 Week Remodel</title>
+        <meta name="description" content="Atlanta's trusted home renovation experts. Complete kitchen remodels, bathroom renovations, and home additions in just 1 week. Serving Atlanta and surrounding areas." />
+        <meta name="keywords" content="kitchen remodeling Atlanta, bathroom renovation Atlanta, home additions Atlanta, 1 week remodel, quick remodeling Atlanta GA" />
+        <meta property="og:title" content="Atlanta's #1 Kitchen & Bathroom Remodeling | 1-Week Projects" />
+        <meta property="og:description" content="Transform your Atlanta home in just 1 week. Premium kitchen remodels, bathroom renovations and home additions with our expert team." />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://yourdomain.com/" />
@@ -35,7 +35,7 @@ const Index = () => {
             renovations in the Atlanta region.
           </p>
           <div className="text-center font-medium text-reno-600">
-            <p>7-Day Renovation Guarantee for All Atlanta Homes</p>
+            <p>1-Week Renovation Guarantee for All Atlanta Homes</p>
           </div>
         </div>
       </section>

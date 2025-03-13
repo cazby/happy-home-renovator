@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
             <Home className="h-6 w-6 text-reno-accent" />
-            <span className="font-bold text-xl text-reno-800">Happy Home Renovator</span>
+            <span className="font-bold text-xl text-reno-800">1 Week Remodel</span>
           </Link>
         </div>
 

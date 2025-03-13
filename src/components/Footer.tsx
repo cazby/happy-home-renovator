@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">Happy Home Renovator</h3>
+            <h3 className="text-xl font-bold">1 Week Remodel</h3>
             <p className="text-reno-100">
               Transforming houses into dream homes with quality craftsmanship and attention to detail.
             </p>
@@ -53,21 +53,20 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <Phone size={16} />
-                <span>(555) 123-4567</span>
+                <span>818-850-3733</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} />
-                <span>info@happyhomerenovator.com</span>
+                <span>george@cudab.com</span>
               </li>
-              <li>123 Renovation Street</li>
-              <li>Suite 456</li>
-              <li>Homeville, HM 12345</li>
+              <li>2700 Braselton Hwy 10-269</li>
+              <li>Dacula, GA 30019</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Happy Home Renovator. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} 1 Week Remodel. All rights reserved.</p>
         </div>
       </div>
     </footer>

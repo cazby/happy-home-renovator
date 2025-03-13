@@ -27,7 +27,7 @@ export const homeSections = [
   {
     title: "Basement Finishing",
     description: "Convert your unused basement into valuable living space, from entertainment rooms to guest suites.",
-    imageSrc: "/lovable-uploads/3f452b6c-3a04-4986-98cb-fdc8e41e407c.png",
+    imageSrc: "/lovable-uploads/bec75484-8f80-404b-b3f1-4ac2bacac697.png",
     link: "/basements"
   },
   {

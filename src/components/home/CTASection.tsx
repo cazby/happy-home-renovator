@@ -1,22 +1,26 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 
-const CTASection: React.FC = () => {
+const CTASection = () => {
   return (
-    <section className="py-16 bg-reno-accent text-white">
+    <section className="bg-reno-accent text-white py-16 md:py-24">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Home in Just 7 Days?</h2>
-        <p className="text-xl mb-8 max-w-2xl mx-auto">
-          Our Atlanta team completes most renovation projects in just one week. Contact us today for a free consultation and estimate on your Atlanta home renovation project.
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Home?</h2>
+        <p className="text-xl mb-8 max-w-3xl mx-auto">
+          Take the first step toward your dream home with our team of experts. 
+          Get your project completed in just 1 week!
         </p>
-        <p className="text-lg mb-8 max-w-2xl mx-auto">
-          Itel is the insurance leader for cost and have partner with us. Click below and learn more.
-        </p>
-        <Button className="bg-white text-reno-accent hover:bg-gray-100 text-lg px-8 py-6 inline-flex items-center gap-2">
-          Get Started Today <ArrowRight className="ml-2" />
-        </Button>
+        <Link to="/quote">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="text-reno-accent bg-white hover:bg-white/90 border-white text-lg px-8 py-6 h-auto"
+          >
+            Get Your Free Quote
+          </Button>
+        </Link>
       </div>
     </section>
   );

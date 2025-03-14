@@ -42,7 +42,9 @@ const Navbar = () => {
               {route.name}
             </Link>
           ))}
-          <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white">Get Quote</Button>
+          <Link to="/quote">
+            <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white">Get Quote</Button>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -75,9 +77,11 @@ const Navbar = () => {
               {route.name}
             </Link>
           ))}
-          <Button className="bg-white hover:bg-white/90 text-reno-accent w-full mt-4">
-            Get Quote
-          </Button>
+          <Link to="/quote" onClick={() => setIsMenuOpen(false)}>
+            <Button className="bg-white hover:bg-white/90 text-reno-accent w-full mt-4">
+              Get Quote
+            </Button>
+          </Link>
         </nav>
       </div>
     </header>

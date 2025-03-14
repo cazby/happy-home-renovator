@@ -43,7 +43,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Link to="/quote">
-            <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white">Get Quote</Button>
+            <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white">Contact</Button>
           </Link>
         </nav>
 
@@ -79,7 +79,7 @@ const Navbar = () => {
           ))}
           <Link to="/quote" onClick={() => setIsMenuOpen(false)}>
             <Button className="bg-white hover:bg-white/90 text-reno-accent w-full mt-4">
-              Get Quote
+              Contact
             </Button>
           </Link>
         </nav>

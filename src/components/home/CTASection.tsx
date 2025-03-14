@@ -18,7 +18,7 @@ const CTASection = () => {
             size="lg" 
             className="text-reno-accent bg-white hover:bg-white/90 border-white text-lg px-8 py-6 h-auto"
           >
-            Get Your Free Quote
+            Contact
           </Button>
         </Link>
       </div>

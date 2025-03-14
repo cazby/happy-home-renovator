@@ -6,7 +6,6 @@ import {
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel';
-import { Link } from 'react-router-dom';
 
 interface HeroSectionProps {
   sections: {
@@ -70,11 +69,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ sections }) => {
                       Professional home renovations tailored to your needs, style, and budget.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
-                      <Link to="/quote">
-                        <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white text-lg px-8 py-6">
-                          Contact
-                        </Button>
-                      </Link>
+                      <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white text-lg px-8 py-6">
+                        Get a Free Quote
+                      </Button>
                       <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 text-lg px-8 py-6">
                         View Our Projects
                       </Button>

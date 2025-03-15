@@ -62,7 +62,7 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       <div
         className={cn(
-          "fixed inset-0 top-16 bg-reno-accent z-40 md:hidden transition-transform duration-300 ease-in-out",
+          "fixed inset-0 top-16 bg-[#1A1F2C] z-40 md:hidden transition-transform duration-300 ease-in-out",
           isMenuOpen ? "transform translate-x-0" : "transform translate-x-full"
         )}
       >

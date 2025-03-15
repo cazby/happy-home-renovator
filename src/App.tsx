@@ -11,6 +11,7 @@ import Bathrooms from "./pages/Bathrooms";
 import Floors from "./pages/Floors";
 import Basements from "./pages/Basements";
 import Quote from "./pages/Quote";
+import ItelValuation from "./pages/ItelValuation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/floors" element={<Floors />} />
           <Route path="/basements" element={<Basements />} />
           <Route path="/quote" element={<Quote />} />
+          <Route path="/itel-valuation" element={<ItelValuation />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

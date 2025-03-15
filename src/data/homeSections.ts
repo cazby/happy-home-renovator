@@ -34,6 +34,6 @@ export const homeSections = [
     title: "Itel Professional Services Contractor",
     description: "Itel is the insurance leader for cost and have partner with us. Click below and learn more.",
     imageSrc: "/lovable-uploads/3f452b6c-3a04-4986-98cb-fdc8e41e407c.png",
-    link: "/basements"
+    link: "/itel-valuation"
   }
 ];

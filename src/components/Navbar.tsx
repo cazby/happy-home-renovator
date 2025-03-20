@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -15,6 +14,7 @@ const Navbar = () => {
   const routes = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
+    { name: 'Why Use Us', path: '/why-use-us' },
     { name: 'Additions', path: '/additions' },
     { name: 'Kitchens', path: '/kitchens' },
     { name: 'Bathrooms', path: '/bathrooms' },

@@ -4,6 +4,7 @@ import PageLayout from '@/components/PageLayout';
 import HeroSection from '@/components/home/HeroSection';
 import ServicesSection from '@/components/home/ServicesSection';
 import FeaturesSection from '@/components/home/FeaturesSection';
+import WhyChooseUsCTA from '@/components/home/WhyChooseUsCTA';
 import CTASection from '@/components/home/CTASection';
 import { homeSections } from '@/data/homeSections';
 import { Helmet } from 'react-helmet';
@@ -24,6 +25,7 @@ const Index = () => {
       
       <HeroSection sections={homeSections} />
       <ServicesSection sections={homeSections} />
+      <WhyChooseUsCTA />
       
       {/* Atlanta Service Area Section */}
       <section className="py-12 bg-gray-50">

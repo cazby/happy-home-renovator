@@ -75,7 +75,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ sections }) => {
                           Get a Free Quote
                         </Button>
                       </Link>
-                      <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 text-lg px-8 py-6">
+                      <Button 
+                        variant="outline" 
+                        className="bg-transparent border-white text-white hover:bg-white/10 text-lg px-8 py-6"
+                        onClick={() => window.open('https://youtu.be/cUjIw9WQCak?si=csCVgII0akAyZgaQ', '_blank')}
+                      >
                         View Our Projects
                       </Button>
                     </div>

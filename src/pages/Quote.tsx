@@ -53,17 +53,45 @@ const Quote = () => {
     },
   });
 
-  const onSubmit = (data: FormValues) => {
+  const onSubmit = async (data: FormValues) => {
     console.log('Form submitted:', data);
     
-    // Display success toast
-    toast({
-      title: "Quote Request Submitted!",
-      description: "We'll contact you shortly to discuss your project.",
-    });
-    
-    // Navigate back to home after submission
-    setTimeout(() => navigate('/'), 2000);
+    try {
+      // Create a formatted email body with all the form data
+      const emailContent = `
+        New Quote Request from 1 Week Remodel Website:
+        
+        Name: ${data.name}
+        Address: ${data.address}
+        Email: ${data.email}
+        Phone: ${data.phone}
+        Preferred Contact Method: ${data.contactPreference}
+        Message: ${data.message || 'No additional message provided'}
+      `;
+      
+      // Using a simple mailto link as a fallback solution
+      // In a production environment, you would use a proper backend API
+      const mailtoLink = `mailto:george@cazby.com?subject=New Quote Request from ${data.name}&body=${encodeURIComponent(emailContent)}`;
+      
+      // Open the email client
+      window.open(mailtoLink, '_blank');
+      
+      // Display success toast
+      toast({
+        title: "Quote Request Submitted!",
+        description: "We'll contact you shortly to discuss your project.",
+      });
+      
+      // Navigate back to home after submission
+      setTimeout(() => navigate('/'), 2000);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Submission Error",
+        description: "There was a problem submitting your request. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (

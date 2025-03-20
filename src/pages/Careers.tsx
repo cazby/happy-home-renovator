@@ -16,7 +16,7 @@ const Careers = () => {
       description: [
         'Oversees the entire construction project, ensuring it runs smoothly and stays on schedule.',
         'Coordinates with subcontractors, suppliers, and clients.',
-        'Manages the project's budget and scope.'
+        'Manages the project\'s budget and scope.'
       ]
     },
     {
@@ -99,7 +99,7 @@ const Careers = () => {
       title: 'Design and Architecture Team',
       icon: <Wrench className="h-6 w-6 text-reno-accent" />,
       description: [
-        'Works with the general contractor to ensure the design and architecture are in alignment with the project's goals and budget.',
+        'Works with the general contractor to ensure the design and architecture are in alignment with the project\'s goals and budget.',
         'May work as part of an external design firm or in-house team.'
       ]
     },

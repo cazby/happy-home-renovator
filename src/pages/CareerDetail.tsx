@@ -1,14 +1,16 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import PageLayout from '@/components/PageLayout';
 import { careerPositions } from '@/data/careerPositions';
+import ApplicationForm from '@/components/careers/ApplicationForm';
 
 const CareerDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const position = careerPositions.find(pos => pos.id === id);
+  const [isApplicationOpen, setIsApplicationOpen] = useState(false);
 
   if (!position) {
     return (
@@ -61,13 +63,22 @@ const CareerDetail: React.FC = () => {
             )}
 
             <div className="pt-6">
-              <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white">
+              <Button 
+                className="bg-reno-accent hover:bg-reno-accent/90 text-white"
+                onClick={() => setIsApplicationOpen(true)}
+              >
                 Apply for this Position
               </Button>
             </div>
           </div>
         </div>
       </div>
+      
+      <ApplicationForm 
+        open={isApplicationOpen}
+        onOpenChange={setIsApplicationOpen}
+        defaultPosition={position.id}
+      />
     </PageLayout>
   );
 };

@@ -1,9 +1,12 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Book } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import ApplicationForm from './ApplicationForm';
 
 const CareersCallToAction: React.FC = () => {
+  const [isApplicationOpen, setIsApplicationOpen] = useState(false);
+  
   return (
     <div className="mt-16 max-w-2xl mx-auto text-center">
       <h2 className="text-2xl font-bold text-reno-800 mb-4 flex items-center justify-center gap-2">
@@ -13,9 +16,17 @@ const CareersCallToAction: React.FC = () => {
       <p className="text-reno-700 mb-6">
         Each of these roles plays a crucial part in ensuring the smooth operation of our company and the successful delivery of construction projects. If you're passionate about quality and craftsmanship, we'd love to hear from you.
       </p>
-      <Button className="bg-reno-accent hover:bg-reno-accent/90 text-white">
+      <Button 
+        className="bg-reno-accent hover:bg-reno-accent/90 text-white"
+        onClick={() => setIsApplicationOpen(true)}
+      >
         Apply Now
       </Button>
+      
+      <ApplicationForm 
+        open={isApplicationOpen}
+        onOpenChange={setIsApplicationOpen}
+      />
     </div>
   );
 };

@@ -44,7 +44,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-reno-accent-alt transition-colors">Our Team</a></li>
               <li><a href="https://vimeo.com/showcase/9078894?" target="_blank" rel="noopener noreferrer" className="hover:text-reno-accent-alt transition-colors">Testimonials</a></li>
               <li><a href="https://youtu.be/cUjIw9WQCak?si=csCVgII0akAyZgaQ" target="_blank" rel="noopener noreferrer" className="hover:text-reno-accent-alt transition-colors">Projects</a></li>
-              <li><a href="#" className="hover:text-reno-accent-alt transition-colors">Careers</a></li>
+              <li><Link to="/careers" className="hover:text-reno-accent-alt transition-colors">Careers</Link></li>
             </ul>
           </div>
           

@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-medium text-lg">Company</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-reno-accent-alt transition-colors">About Us</a></li>
+              <li><Link to="/about" className="hover:text-reno-accent-alt transition-colors">About Us</Link></li>
               <li><a href="#" className="hover:text-reno-accent-alt transition-colors">Our Team</a></li>
               <li><a href="https://vimeo.com/showcase/9078894?" target="_blank" rel="noopener noreferrer" className="hover:text-reno-accent-alt transition-colors">Testimonials</a></li>
               <li><a href="https://youtu.be/cUjIw9WQCak?si=csCVgII0akAyZgaQ" target="_blank" rel="noopener noreferrer" className="hover:text-reno-accent-alt transition-colors">Projects</a></li>

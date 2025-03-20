@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Home, Menu, X } from 'lucide-react';
+import { Home, Menu, X, Briefcase } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
@@ -19,6 +19,7 @@ const Navbar = () => {
     { name: 'Bathrooms', path: '/bathrooms' },
     { name: 'Floors', path: '/floors' },
     { name: 'Basements', path: '/basements' },
+    { name: 'Careers', path: '/careers' },
   ];
 
   return (

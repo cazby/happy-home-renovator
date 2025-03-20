@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Home, Menu, X } from 'lucide-react';
+import { Home, Menu, X, Tag } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Navbar = () => {
@@ -21,6 +22,7 @@ const Navbar = () => {
     { name: 'Floors', path: '/floors' },
     { name: 'Basements', path: '/basements' },
     { name: 'Careers', path: '/careers' },
+    { name: 'Special Offer', path: '/coupon' },
   ];
 
   return (
@@ -39,8 +41,12 @@ const Navbar = () => {
             <Link
               key={route.path}
               to={route.path}
-              className="text-reno-700 hover:text-reno-accent transition-colors font-medium"
+              className={cn(
+                "text-reno-700 hover:text-reno-accent transition-colors font-medium",
+                route.path === '/coupon' && "flex items-center gap-1"
+              )}
             >
+              {route.path === '/coupon' && <Tag className="h-4 w-4 text-reno-accent-alt" />}
               {route.name}
             </Link>
           ))}
@@ -73,9 +79,13 @@ const Navbar = () => {
             <Link
               key={route.path}
               to={route.path}
-              className="text-lg font-medium text-white hover:text-white/80 py-2"
+              className={cn(
+                "text-lg font-medium text-white hover:text-white/80 py-2",
+                route.path === '/coupon' && "flex items-center gap-2"
+              )}
               onClick={() => setIsMenuOpen(false)}
             >
+              {route.path === '/coupon' && <Tag className="h-4 w-4 text-reno-accent-alt" />}
               {route.name}
             </Link>
           ))}

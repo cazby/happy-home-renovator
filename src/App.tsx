@@ -16,6 +16,7 @@ import Careers from "./pages/Careers";
 import CareerDetail from "./pages/CareerDetail";
 import AboutUs from "./pages/AboutUs";
 import WhyUseUs from "./pages/WhyUseUs";
+import Coupon from "./pages/Coupon";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/careers/:id" element={<CareerDetail />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/why-use-us" element={<WhyUseUs />} />
+          <Route path="/coupon" element={<Coupon />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

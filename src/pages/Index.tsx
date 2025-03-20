@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PageLayout from '@/components/PageLayout';
 import HeroSection from '@/components/home/HeroSection';
 import ServicesSection from '@/components/home/ServicesSection';
@@ -8,6 +9,8 @@ import WhyChooseUsCTA from '@/components/home/WhyChooseUsCTA';
 import CTASection from '@/components/home/CTASection';
 import { homeSections } from '@/data/homeSections';
 import { Helmet } from 'react-helmet';
+import { Tag } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Index = () => {
   return (
@@ -38,6 +41,24 @@ const Index = () => {
           </p>
           <div className="text-center font-medium text-reno-600">
             <p>1-Week Renovation Guarantee for All Atlanta Homes</p>
+          </div>
+        </div>
+      </section>
+      
+      {/* Limited-Time Offer Banner */}
+      <section className="py-10 bg-reno-accent/10">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 max-w-4xl mx-auto">
+            <div className="flex items-center gap-3">
+              <Tag className="h-6 w-6 text-reno-accent-alt" />
+              <h3 className="text-xl font-bold text-reno-800">Limited-Time Special Offer</h3>
+            </div>
+            <p className="text-lg text-reno-700 font-medium">$500 OFF any repair or remodel over $2,500!</p>
+            <Link to="/coupon">
+              <Button variant="outline" className="border-reno-accent-alt text-reno-accent-alt hover:bg-reno-accent-alt/10">
+                Get Your Coupon
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

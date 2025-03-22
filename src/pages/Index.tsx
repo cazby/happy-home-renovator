@@ -16,11 +16,11 @@ const Index = () => {
   return (
     <PageLayout>
       <Helmet>
-        <title>Premier Kitchen, Bathroom & Home Remodeling in Atlanta, GA | 1 Week Remodel</title>
-        <meta name="description" content="Atlanta's trusted home renovation experts. Complete kitchen remodels, bathroom renovations, and home additions in just 1 week. Serving Atlanta and surrounding areas." />
-        <meta name="keywords" content="kitchen remodeling Atlanta, bathroom renovation Atlanta, home additions Atlanta, 1 week remodel, quick remodeling Atlanta GA" />
-        <meta property="og:title" content="Atlanta's #1 Kitchen & Bathroom Remodeling | 1-Week Projects" />
-        <meta property="og:description" content="Transform your Atlanta home in just 1 week. Premium kitchen remodels, bathroom renovations and home additions with our expert team." />
+        <title>Atlanta's Premier Bathroom & Kitchen Remodeling | 1 Week Remodel</title>
+        <meta name="description" content="Atlanta's trusted bathroom remodeling experts. Complete bathroom renovations and kitchen remodels in just 1 week. Serving Atlanta and surrounding areas including Buckhead, Decatur, and Sandy Springs." />
+        <meta name="keywords" content="bathroom remodeling Atlanta, Atlanta bathroom renovation, Atlanta remodel bathroom, bathroom remodel Atlanta GA, quick bathroom renovations Atlanta" />
+        <meta property="og:title" content="Atlanta's #1 Bathroom & Kitchen Remodeling | 1-Week Projects" />
+        <meta property="og:description" content="Transform your Atlanta bathroom in just 1 week. Premium bathroom renovations and kitchen remodels with our expert Atlanta team. Serving all Atlanta metro areas." />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://yourdomain.com/" />
@@ -33,14 +33,14 @@ const Index = () => {
       {/* Atlanta Service Area Section */}
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-reno-800 mb-6">Serving Atlanta and Surrounding Areas</h2>
+          <h2 className="text-3xl font-bold text-center text-reno-800 mb-6">Atlanta's Premier Bathroom Remodeling Services</h2>
           <p className="text-center text-reno-600 max-w-3xl mx-auto mb-8">
-            Our team provides premium renovation services throughout the Atlanta metropolitan area, including Buckhead, 
+            Our team provides premium bathroom renovation services throughout the Atlanta metropolitan area, including Buckhead, 
             Decatur, Sandy Springs, Marietta, Alpharetta, Roswell, and beyond. Experience the fastest, highest-quality 
-            renovations in the Atlanta region.
+            bathroom remodels in the Atlanta region.
           </p>
           <div className="text-center font-medium text-reno-600">
-            <p>1-Week Renovation Guarantee for All Atlanta Homes</p>
+            <p>1-Week Bathroom Renovation Guarantee for All Atlanta Homes</p>
           </div>
         </div>
       </section>
@@ -53,7 +53,7 @@ const Index = () => {
               <Tag className="h-6 w-6 text-reno-accent-alt" />
               <h3 className="text-xl font-bold text-reno-800">Limited-Time Special Offer</h3>
             </div>
-            <p className="text-lg text-reno-700 font-medium">$500 OFF any repair or remodel over $2,500!</p>
+            <p className="text-lg text-reno-700 font-medium">$500 OFF any bathroom remodel over $2,500!</p>
             <Link to="/coupon">
               <Button variant="outline" className="border-reno-accent-alt text-reno-accent-alt hover:bg-reno-accent-alt/10">
                 Get Your Coupon
